@@ -1,9 +1,16 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
+#define MAX 100
 
 int main(){
   int value1, value2, sum;
+  char name[MAX];
+
+  printf("What is your name?\n");
+  scanf("%s", name);
+  printf("Hello, %s!\n", name);
+  printf("Rolling the dice...");
 
   srand(time(NULL));
   value1 = rand() % 6 + 1;
